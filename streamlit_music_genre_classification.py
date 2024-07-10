@@ -48,8 +48,7 @@ def main():
         # Predict the genre of the uploaded file
         with st.spinner("Classifying..."):
             time.sleep(3)
-            predicted_genre = "Jazz"
-            # predicted_genre = predict_genre("uploaded_file.wav")
+            predicted_genre = predict_genre("uploaded_file.wav")
         
         st.success(f"The predicted genre is: {predicted_genre}")
 
